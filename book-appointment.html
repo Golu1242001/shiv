@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment | Shiv Physiotherapy and Wellness Centre</title>
+    <meta name="description" content="Book an appointment with Shiv Physiotherapy and Wellness Centre in Patna for physiotherapy, orthopedic rehabilitation, and pediatric care." />
+    <link rel="canonical" href="https://shivphysiotherapypatna.com/book-appointment" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Book Appointment | Shiv Physiotherapy and Wellness Centre" />
+    <meta property="og:description" content="Request a physiotherapy consultation in Patna through our appointment form or direct phone call." />
+    <meta property="og:url" content="https://shivphysiotherapypatna.com/book-appointment" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Book Appointment | Shiv Physiotherapy and Wellness Centre" />
+    <meta name="twitter:description" content="Request an appointment with our physiotherapist in Patna." />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="/" class="brand" aria-label="Shiv Physiotherapy and Wellness Centre home">
+          <img src="http://127.0.0.1:8000/images/logo.png" alt="Shiv Physiotherapy and Wellness Centre logo" class="brand-mark" />
+          <span class="brand-text">
+            <span>Shiv Physiotherapy</span>
+            <small>Wellness Centre</small>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/about.html" class="nav-link">About</a>
+          <a href="/services.html" class="nav-link">Services</a>
+          <a href="/conditions.html" class="nav-link">Conditions</a>
+          <a href="/pediatric-physiotherapy.html" class="nav-link">Pediatric Care</a>
+          <a href="/contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="/book-appointment.html">Book Appointment</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span> / </span>
+            <span>Book Appointment</span>
+          </nav>
+          <span class="eyebrow">Book a consultation</span>
+          <h1>Request an appointment with a physiotherapist.</h1>
+          <p>Please share your details below and our team will get in touch with you to confirm the consultation.</p>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container form-shell">
+          <div class="form-card reveal">
+            <form id="appointment-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="fullName">Full Name *</label>
+                  <input id="fullName" name="fullName" type="text" required placeholder="Enter your full name" />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone Number *</label>
+                  <input id="phone" name="phone" type="tel" required placeholder="7739573674" />
+                </div>
+                <div class="field">
+                  <label for="age">Age</label>
+                  <input id="age" name="age" type="number" min="0" placeholder="Your age" />
+                </div>
+                <div class="field">
+                  <label for="preferredDate">Preferred Date</label>
+                  <input id="preferredDate" name="preferredDate" type="date" />
+                </div>
+                <div class="field">
+                  <label for="preferredTime">Preferred Time</label>
+                  <select id="preferredTime" name="preferredTime">
+                    <option value="">Select</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                    <option>6:00 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:00 PM</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="treatmentConcern">Treatment / Concern</label>
+                  <select id="treatmentConcern" name="treatmentConcern">
+                    <option value="">Select concern</option>
+                    <option>Neck Pain</option>
+                    <option>Back Pain</option>
+                    <option>Knee Pain</option>
+                    <option>Slip Disc</option>
+                    <option>PIVD</option>
+                    <option>Sciatica</option>
+                    <option>Arthritis</option>
+                    <option>Poor Posture</option>
+                    <option>Paralysis</option>
+                    <option>Spinal Cord Injury</option>
+                    <option>Cerebral Palsy</option>
+                    <option>Down Syndrome</option>
+                    <option>Developmental Delay</option>
+                    <option>Manual Therapy</option>
+                    <option>Electro Therapy</option>
+                    <option>TENS</option>
+                    <option>Ultrasound Therapy</option>
+                    <option>Cupping Therapy</option>
+                    <option>Taping</option>
+                    <option>Dry Needling</option>
+                    <option>Vacuum Therapy</option>
+                    <option>ISTM</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell us more about your condition or goals."></textarea>
+                </div>
+              </div>
+
+              <div class="actions" style="margin-top: 22px;">
+                <button class="btn btn-primary" type="submit">Request Appointment</button>
+                <a class="btn btn-ghost" href="tel:+917739573674">Book by Phone</a>
+              </div>
+
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="contact-card reveal">
+            <h3>Prefer to call?</h3>
+            <p><strong>7739573674</strong></p>
+            <p>We’re open Monday - Sunday, 10:00 AM - 9:00 PM.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="tel:+917739573674">Call Now</a>
+              <a class="btn btn-light" href="tel:+917739573674">Talk to a Physiotherapist</a>
+              <a class="btn btn-light" href="https://wa.me/917739573674?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment%20at%20Shiv%20Physiotherapy%20and%20Wellness%20Centre." target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/" class="brand" aria-label="Shiv Physiotherapy home">
+              <img src="http://127.0.0.1:8000/images/logo.png" alt="Shiv Physiotherapy and Wellness Centre logo" class="brand-mark" />
+              <span class="brand-text">
+                <span>Shiv Physiotherapy</span>
+                <small>Wellness Centre</small>
+              </span>
+            </a>
+            <p>Move Better. Live Better.</p>
+          </div>
+          <div>
+            <div class="footer-title">Quick Links</div>
+            <div class="footer-links">
+              <a href="/">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/services.html">Services</a>
+              <a href="/conditions.html">Conditions</a>
+              <a href="/contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Contact</div>
+            <div class="footer-contact">
+              <p><a href="tel:+917739573674">7739573674</a></p>
+              <p><a href="https://wa.me/917739573674?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment%20at%20Shiv%20Physiotherapy%20and%20Wellness%20Centre." target="_blank" rel="noreferrer">WhatsApp</a></p>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Address</div>
+            <div class="footer-contact">
+              <p>Rajiv Nagar Road No. 23,</p>
+              <p>Near Mango Apartment,</p>
+              <p>Patna, Bihar</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Shiv Physiotherapy and Wellness Centre. All rights reserved.</p>
+          <a class="btn btn-primary" href="/book-appointment.html">Book Appointment</a>
+        </div>
+      
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/917739573674?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment%20at%20Shiv%20Physiotherapy%20and%20Wellness%20Centre." target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">WA</a>
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <div class="mobile-cta-bar" aria-label="Quick actions">
+      <a class="mobile-cta call" href="tel:+917739573674">Call Now</a>
+      <a class="mobile-cta whatsapp" href="https://wa.me/917739573674?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment%20at%20Shiv%20Physiotherapy%20and%20Wellness%20Centre." target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="mobile-cta book" href="/book-appointment.html">Book</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
