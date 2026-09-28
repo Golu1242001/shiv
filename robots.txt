@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shivphysiotherapypatna.com/sitemap.xml
+Sitemap: https://shivphysiotherapypatna.in/sitemap.xml
